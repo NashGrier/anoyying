@@ -36,7 +36,38 @@
                       </block>
                     </value>
                     <next>
-                      <block type="movement_forward" id="116">
+                      <block type="controls_if" id="225" inline="false">
+                        <value name="IF0">
+                          <block type="logic_compare" id="232" inline="true">
+                            <field name="OP">GT</field>
+                            <value name="A">
+                              <block type="sensor_spectrometer" id="233">
+                                <field name="LIGHT">BLUE</field>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <block type="math_number" id="240">
+                                <field name="NUM">90</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <statement name="DO0">
+                          <block type="movement_forward" id="116">
+                            <next>
+                              <block type="robot_delay" id="241" inline="true">
+                                <value name="DELAY">
+                                  <block type="math_number" id="242">
+                                    <field name="NUM">100</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="movement_stop" id="243"></block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </statement>
                         <next>
                           <block type="robot_delay" id="76" inline="true">
                             <value name="DELAY">
