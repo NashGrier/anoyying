@@ -32,7 +32,7 @@
                   <block type="oled_drawnumber" id="201" inline="true">
                     <value name="NUMBER">
                       <block type="sensor_spectrometer" id="218">
-                        <field name="LIGHT">GREEN</field>
+                        <field name="LIGHT">RED</field>
                       </block>
                     </value>
                     <next>
@@ -42,7 +42,7 @@
                             <field name="OP">GT</field>
                             <value name="A">
                               <block type="sensor_spectrometer" id="233">
-                                <field name="LIGHT">GREEN</field>
+                                <field name="LIGHT">RED</field>
                               </block>
                             </value>
                             <value name="B">
