@@ -47,14 +47,14 @@
                             </value>
                             <value name="B">
                               <block type="math_number" id="14">
-                                <field name="NUM">90</field>
+                                <field name="NUM">92</field>
                               </block>
                             </value>
                           </block>
                         </value>
                         <statement name="DO0">
                           <block type="controls_if" id="41" inline="false">
-                            <mutation else="1"></mutation>
+                            <mutation elseif="1" else="1"></mutation>
                             <value name="IF0">
                               <block type="logic_compare" id="48" inline="true">
                                 <field name="OP">LT</field>
@@ -76,6 +76,24 @@
                                   <block type="robot_delay" id="103" inline="true">
                                     <value name="DELAY">
                                       <block type="math_number" id="104">
+                                        <field name="NUM">100</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </next>
+                              </block>
+                            </statement>
+                            <value name="IF1">
+                              <block type="sensor_object" id="110">
+                                <field name="OBJECT">RIGHTFRONT</field>
+                              </block>
+                            </value>
+                            <statement name="DO1">
+                              <block type="movement_left" id="130">
+                                <next>
+                                  <block type="robot_delay" id="112" inline="true">
+                                    <value name="DELAY">
+                                      <block type="math_number" id="113">
                                         <field name="NUM">100</field>
                                       </block>
                                     </value>
